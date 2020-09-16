@@ -1,1 +1,20 @@
-<p>home works!</p>
+<div fxLayout="row wrap" fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutGap="18px" fxLayoutAlign="left" class="cardList">
+    <ng-container *ngIf="jaapData != undefined">
+        <div *ngFor="let property of jaapData.properties">
+            <mat-card class="cardListItem">
+                <mat-card-header>
+                    <mat-card-title>{{property.street_nr}}</mat-card-title>
+                    <mat-card-subtitle>€{{property.price}},-</mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image src={{property.thumb}} height="145" alt="Photo of a Shiba Inu">
+                <mat-card-content>
+                    Kamers: {{property.rooms}}<br>
+                    Oppervlakte: {{property.floor_area}}m²
+                </mat-card-content>
+                <mat-card-actions>
+                    <a mat-button href="https://www.jaap.nl/huis/{{property.id}}" target="_blank">Bekijken</a>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </ng-container>
+</div>

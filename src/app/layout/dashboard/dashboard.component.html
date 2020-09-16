@@ -14,18 +14,10 @@
                 *ngIf="isHandset$ | async">
                 <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
             </button>
-            <a routerLink="/"><span>SnuffelBox</span></a>
+            HuizenZoeker
 
             <!-- This fills the remaining space of the current row -->
             <span class="fill-remaining-space"></span>
-
-            <a routerLink="" class="object-spacer">
-                Uitloggen
-            </a>
-
-            <!-- <a [routerLink]="loggedIn ? '/dashboard' : '/login'" class="object-spacer">
-                Dashboard
-            </a> -->
         </mat-toolbar>
         <router-outlet></router-outlet>
         <app-footer></app-footer>

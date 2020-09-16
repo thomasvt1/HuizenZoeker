@@ -10,6 +10,7 @@ import { RouterModule } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { AppRoutingModule } from './app-routing';
 import { MapComponent } from './pages/map/map.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { MapComponent } from './pages/map/map.component';
     MaterialModule,
     RouterModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

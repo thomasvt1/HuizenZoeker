@@ -1,0 +1,47 @@
+.cardList {
+    padding: 12px;
+  }
+  /* Column Gap */
+  .cardList > * {
+    box-sizing: border-box;
+  }
+  .cardList > *:not(:last-child) {
+    margin-right: 32px;
+  }
+  
+  /* Item sizing */
+  .cardListItem {
+    margin-bottom: 18px;
+  }
+  
+  @media screen and (max-width: 959px) {
+    /* Column Gap */
+    .cardList > *:not(:last-child) {
+      margin-right: 0px !important;
+    }
+  
+    .cardList {
+      padding: 0px !important;
+    }
+  
+    .cardListItem {
+      margin-bottom: 10px !important;
+    }
+  }
+  
+  .map {
+    width: 100%;
+    height: 40vh !important;
+  }
+  
+  table {
+    width: 100%;
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+  .mat-card {
+    box-shadow: 3px 0 6px rgba(0,0,0,.24);
+  }
