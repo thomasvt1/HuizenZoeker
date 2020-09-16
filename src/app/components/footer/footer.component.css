@@ -1,0 +1,46 @@
+footer {
+    text-align: center;
+  }
+  
+  footer p {
+    color: #888;
+    font-size: 13px;
+    letter-spacing: 0.4px;
+  }
+  
+  footer a {
+    color: #4a89dc;
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+  
+  footer a:hover {
+    color: #666;
+    text-decoration: underline;
+  }
+  
+  footer img {
+    width: 80px;
+    transition: all 0.2s ease;
+  }
+  
+  footer img:hover {
+    opacity: 0.83;
+  }
+  
+  footer img:focus,
+  footer a:focus {
+    outline: none;
+  }
+  
+  body {
+    font-family: Helvetica;
+    background: #eee;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  .spacer {
+    font-size: 0;
+    height: 10px;
+    line-height: 0;
+  }
