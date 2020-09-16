@@ -121,6 +121,12 @@
               "devServerTarget": "housefinder:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "cname": "huizenzoeker.vantilburg.me"
+          }
         }
       }
     }
